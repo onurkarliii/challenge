@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="challengeTableViewCell" rowHeight="200" id="hl4-GQ-jAE" customClass="challengeTableViewCell" customModule="challange" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="537" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hl4-GQ-jAE" id="Ggn-FJ-98q">
+                <rect key="frame" x="0.0" y="0.0" width="537" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-mk-JFU">
+                        <rect key="frame" x="20" y="22" width="497" height="156"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="txC-KY-b79">
+                                <rect key="frame" x="10" y="0.0" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5vx-F2-7bG">
+                                <rect key="frame" x="10" y="40" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Eg-mk-JFU" firstAttribute="width" secondItem="Ggn-FJ-98q" secondAttribute="width" multiplier="0.925512" id="6T8-dw-dj4"/>
+                    <constraint firstItem="6Eg-mk-JFU" firstAttribute="centerY" secondItem="Ggn-FJ-98q" secondAttribute="centerY" id="JKE-TN-e9c"/>
+                    <constraint firstItem="6Eg-mk-JFU" firstAttribute="centerX" secondItem="Ggn-FJ-98q" secondAttribute="centerX" id="NRW-kH-3bp"/>
+                    <constraint firstItem="6Eg-mk-JFU" firstAttribute="height" secondItem="Ggn-FJ-98q" secondAttribute="height" multiplier="0.78" id="ZVa-Bp-tNY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="filmName" destination="txC-KY-b79" id="THe-MD-Kyh"/>
+                <outlet property="filmRating" destination="5vx-F2-7bG" id="2Bm-hb-Rme"/>
+                <outlet property="viewShadow" destination="6Eg-mk-JFU" id="rpf-Qd-sqR"/>
+            </connections>
+            <point key="canvasLocation" x="-287.68115942028987" y="-310.71428571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
